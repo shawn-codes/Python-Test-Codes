@@ -1,3 +1,3 @@
-for x in range(5):
-    for y in range(3):
-        print(f"({x}, {y})")
+# Comment in Python
+for number in range(3):
+    print("Attempt", number + 1,)
