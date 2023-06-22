@@ -1,16 +1,18 @@
 # Comment in Python
-# Generator Password
+
 import random
-import string
 
+song_requests = []
 
-def pas():
-    first_letter = random.choice(string.ascii_letters) + random.choice(
-        string.ascii_letters) + random.choice(
-        string.ascii_letters) + random.choice(string.ascii_letters)
-    num = random.randint(1000, 9999)
-    password = first_letter + str(num)
-    print(password)
+song_request = None
 
+while True:
+    song_request = input('Enter a song title: ')
+    if song_request == 'Quit':
+        break
+    song_requests.append(song_request)
 
-pas()
+if (len(song_requests) > 0):
+    print(random.choice(song_requests))
+else:
+    print('No songs were entered')
