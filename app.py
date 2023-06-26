@@ -1,18 +1,15 @@
 # Comment in Python
 
-import random
+def mean(numbers):
+    total = 0
+    count = 0
 
-song_requests = []
+    for num in numbers:
+        total += num
+        count += 1
 
-song_request = None
+    if count == 0:
+        return 0  # To handle empty list input
 
-while True:
-    song_request = input('Enter a song title: ')
-    if song_request == 'Quit':
-        break
-    song_requests.append(song_request)
-
-if (len(song_requests) > 0):
-    print(random.choice(song_requests))
-else:
-    print('No songs were entered')
+    mean_value = total / count
+    return mean_value
