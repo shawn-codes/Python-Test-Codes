@@ -1,6 +1,9 @@
-def greet(first_name, last_name):
-    print("Hi there")
-    print("Welcome aboard")
-
-
-greet()
+temperature = 15
+if temperature > 30:
+    print("It's Warm")
+    print("Drink Water")
+elif temperature > 20:
+    print("It's nice")
+else:
+    print("It's Cold")
+print("Done")
